@@ -9,5 +9,5 @@ def create_graph():
   cities = travel_df.to_dict("records")
   x_values = [cities[0]['City'], cities[1]['City'], cities[2]['City']]
   y_values = [cities[0]['Population'], cities[1]['Population'], cities[2]['Population']]
-  trace_first_three_pops = {'type': 'bar', 'x': x_values, 'y': y_values}
+  trace_first_three_pops = {'x': x_values, 'y': y_values}
   plotly.offline.plot([trace_first_three_pops])
